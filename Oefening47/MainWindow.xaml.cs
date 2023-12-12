@@ -25,7 +25,9 @@ namespace Oefening47
             // OF
             namen = new List<string>();
             namen.AddRange(voornamenArray);
-            
+            // OF
+            namen = new List<string>() { "Wouter", "Paul", "Andreas", "Niels", "Kathleen", "Paul", "Silvia", "Patricia" };
+
             // Toon lijst in ListBox
             ToonList();
         }
