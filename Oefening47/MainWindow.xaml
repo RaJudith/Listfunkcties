@@ -1,0 +1,27 @@
+﻿<Window x:Class="Oefening47.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oefening47"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" x:Name="LbxNamenLijst" Margin="10" FontSize="18"/>
+        <StackPanel Grid.Column="1">
+            <Button x:Name="BtnAdd" Margin="10" Content="Add" Width="140" FontSize="18" Click="BtnAdd_Click"/>
+            <Button x:Name="BtnInsert" Margin="10" Content="Insert" Width="140" FontSize="18" Click="BtnInsert_Click"/>
+            <Button x:Name="BtnDelete" Margin="10" Content="Delete" Width="140" FontSize="18" Click="BtnDelete_Click"/>
+            <Button x:Name="BtnSort" Margin="10" Content="Sort" Width="140" FontSize="18" Click="BtnSort_Click"/>
+            <Button x:Name="BtnToArray" Margin="10" Content="To Array" Width="140" FontSize="18" Click="BtnToArray_Click"/>
+            <Button x:Name="BtnFind" Margin="10" Content="Find" Width="140" FontSize="18" Click="BtnFind_Click"/>
+            <TextBox x:Name="TxtResult" FontSize="18" Margin="10"/>
+        </StackPanel>
+        <ListBox Grid.Column="2" x:Name="LbxNamenArray" Margin="10" FontSize="18"/>
+    </Grid>
+</Window>
